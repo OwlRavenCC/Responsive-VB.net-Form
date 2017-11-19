@@ -1,0 +1,12 @@
+C:\Users\Carlosh and Cory\source\repos\Hotel System\Hotel System\bin\Debug\Hotel System.exe.config
+C:\Users\Carlosh and Cory\source\repos\Hotel System\Hotel System\bin\Debug\Hotel System.exe
+C:\Users\Carlosh and Cory\source\repos\Hotel System\Hotel System\bin\Debug\Hotel System.pdb
+C:\Users\Carlosh and Cory\source\repos\Hotel System\Hotel System\bin\Debug\Hotel System.xml
+C:\Users\Carlosh and Cory\source\repos\Hotel System\Hotel System\obj\Debug\Hotel System.vbprojResolveAssemblyReference.cache
+C:\Users\Carlosh and Cory\source\repos\Hotel System\Hotel System\obj\Debug\Hotel_System.Form1.resources
+C:\Users\Carlosh and Cory\source\repos\Hotel System\Hotel System\obj\Debug\Hotel_System.Resources.resources
+C:\Users\Carlosh and Cory\source\repos\Hotel System\Hotel System\obj\Debug\Hotel System.vbproj.GenerateResource.Cache
+C:\Users\Carlosh and Cory\source\repos\Hotel System\Hotel System\obj\Debug\Hotel System.vbproj.CoreCompileInputs.cache
+C:\Users\Carlosh and Cory\source\repos\Hotel System\Hotel System\obj\Debug\Hotel System.exe
+C:\Users\Carlosh and Cory\source\repos\Hotel System\Hotel System\obj\Debug\Hotel System.xml
+C:\Users\Carlosh and Cory\source\repos\Hotel System\Hotel System\obj\Debug\Hotel System.pdb
