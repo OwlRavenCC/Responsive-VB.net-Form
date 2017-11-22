@@ -190,21 +190,25 @@ Module Hotel_module
     End Sub
     'ROOMS SUBS
     'Creates new room
-    Public Sub CreateRoom(number As String, category As String)
+    Public Sub CreateRoom(number As String, category As String, occupants As Integer, price As Double)
         Try
             cm = New OleDb.OleDbCommand
             With cm
                 .Connection = cn
                 .CommandType = CommandType.Text
-                .CommandText = "INSERT INTO rooms (num,cat) VALUES (@number,@category)"
+                .CommandText = "INSERT INTO rooms (num,cat,occupants,price) VALUES (@number,@category,@occupants,@price)"
 
                 'Validate and assign value to parameters
                 .Parameters.Add(New System.Data.OleDb.OleDbParameter("@number", System.Data.OleDb.OleDbType.VarChar, 255, number))
                 .Parameters.Add(New System.Data.OleDb.OleDbParameter("@category", System.Data.OleDb.OleDbType.VarChar, 255, category))
+                .Parameters.Add(New System.Data.OleDb.OleDbParameter("@occupants", System.Data.OleDb.OleDbType.VarChar, 255, occupants))
+                .Parameters.Add(New System.Data.OleDb.OleDbParameter("@price", System.Data.OleDb.OleDbType.Currency, 255, price))
 
                 'Run query parameters
                 cm.Parameters("@number").Value = number
                 cm.Parameters("@category").Value = category
+                cm.Parameters("@occupants").Value = occupants
+                cm.Parameters("@price").Value = price
 
                 cm.ExecuteNonQuery()
                 MsgBox("Room was created sucessfully.", MsgBoxStyle.Information)
@@ -337,4 +341,24 @@ Module Hotel_module
         Next
 
     End Sub
+
+    Public Function Check_textbox(form_panel As TableLayoutPanel) As Boolean
+
+
+        Dim Checker As Boolean
+
+        Checker = True
+
+        For Each tb As TextBox In form_panel.Controls.OfType(Of TextBox)()
+            Trim(tb.Text)
+            If tb.Text = "" Then
+                Checker = False
+            End If
+        Next
+
+        Return Checker
+
+
+
+    End Function
 End Module
