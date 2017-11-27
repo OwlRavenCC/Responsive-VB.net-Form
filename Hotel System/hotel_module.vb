@@ -250,7 +250,7 @@ Module Hotel_module
         End Try
     End Sub
 
-    Public Sub Fill_textbox_Room(id_room As String, number As TextBox, category As TextBox)
+    Public Sub Fill_textbox_Room(id_room As String, number As TextBox, category As TextBox, occupants As TextBox, price As TextBox)
         Try
             cm = New OleDb.OleDbCommand
             With cm
@@ -262,6 +262,8 @@ Module Hotel_module
             While dr.Read()
                 number.Text = dr("num").ToString
                 category.Text = dr("cat").ToString
+                occupants.Text = dr("occupants").ToString
+                price.Text = dr("price").ToString
 
 
             End While
@@ -275,23 +277,27 @@ Module Hotel_module
     End Sub
 
     'Updates existing room
-    Public Sub UpdateRoom(id_room As String, num As String, cat As String)
+    Public Sub UpdateRoom(id_room As String, num As String, cat As String, occupants As String, price As String)
         Try
             cm = New OleDb.OleDbCommand
             With cm
                 .Connection = cn
                 .CommandType = CommandType.Text
-                .CommandText = "UPDATE rooms SET num = @num ,cat = @cat WHERE id_room =" & id_room
+                .CommandText = "UPDATE rooms SET num = @num ,cat = @cat, occupants = @occupants, price = @price WHERE id_room =" & id_room
 
 
                 'Validate and assign value to parameters
                 .Parameters.Add(New System.Data.OleDb.OleDbParameter("@num", System.Data.OleDb.OleDbType.VarChar, 255, num))
                 .Parameters.Add(New System.Data.OleDb.OleDbParameter("@cat", System.Data.OleDb.OleDbType.VarChar, 255, cat))
+                .Parameters.Add(New System.Data.OleDb.OleDbParameter("@occupants", System.Data.OleDb.OleDbType.VarChar, 255, occupants))
+                .Parameters.Add(New System.Data.OleDb.OleDbParameter("@price", System.Data.OleDb.OleDbType.VarChar, 255, price))
 
 
                 'Run query parameters
                 cm.Parameters("@num").Value = num
                 cm.Parameters("@cat").Value = cat
+                cm.Parameters("@occupants").Value = occupants
+                cm.Parameters("@price").Value = price
 
 
                 cm.ExecuteNonQuery()

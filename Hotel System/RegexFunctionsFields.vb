@@ -1,7 +1,7 @@
 ﻿Imports System.Globalization
 Imports System.Text.RegularExpressions
 
-Public Class RegexFunctions
+Public Class RegexFunctionsFields
     Dim invalid As Boolean = False
 
     Public Function IsValidEmail(strIn As String) As Boolean

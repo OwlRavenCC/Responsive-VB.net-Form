@@ -30,6 +30,7 @@ Partial Class Rooms
         Me.Last_label = New System.Windows.Forms.Label()
         Me.Name_label = New System.Windows.Forms.Label()
         Me.TableLayoutPanel6 = New System.Windows.Forms.TableLayoutPanel()
+        Me.Action_btn = New System.Windows.Forms.Button()
         Me.Total_txt = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Price_txt = New System.Windows.Forms.TextBox()
@@ -51,7 +52,6 @@ Partial Class Rooms
         Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
         Me.Delete_btn = New System.Windows.Forms.Button()
         Me.Update_btn = New System.Windows.Forms.Button()
-        Me.Action_btn = New System.Windows.Forms.Button()
         Me.TableLayoutPanel6.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         Me.Panel_form.SuspendLayout()
@@ -170,6 +170,20 @@ Partial Class Rooms
         Me.TableLayoutPanel6.Size = New System.Drawing.Size(576, 381)
         Me.TableLayoutPanel6.TabIndex = 1
         '
+        'Action_btn
+        '
+        Me.Action_btn.BackColor = System.Drawing.Color.SteelBlue
+        Me.Action_btn.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Action_btn.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Action_btn.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.Action_btn.Location = New System.Drawing.Point(2, 327)
+        Me.Action_btn.Margin = New System.Windows.Forms.Padding(2)
+        Me.Action_btn.Name = "Action_btn"
+        Me.Action_btn.Size = New System.Drawing.Size(284, 52)
+        Me.Action_btn.TabIndex = 38
+        Me.Action_btn.Text = "REGISTER"
+        Me.Action_btn.UseVisualStyleBackColor = False
+        '
         'Total_txt
         '
         Me.Total_txt.Dock = System.Windows.Forms.DockStyle.Fill
@@ -224,9 +238,9 @@ Partial Class Rooms
         Me.Label3.Location = New System.Drawing.Point(290, 134)
         Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(41, 24)
+        Me.Label3.Size = New System.Drawing.Size(114, 24)
         Me.Label3.TabIndex = 31
-        Me.Label3.Text = "Price"
+        Me.Label3.Text = "Price per person"
         '
         'Label2
         '
@@ -447,20 +461,6 @@ Partial Class Rooms
         Me.Update_btn.TabIndex = 4
         Me.Update_btn.Text = "Update Room"
         Me.Update_btn.UseVisualStyleBackColor = False
-        '
-        'Action_btn
-        '
-        Me.Action_btn.BackColor = System.Drawing.Color.SteelBlue
-        Me.Action_btn.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Action_btn.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Action_btn.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Action_btn.Location = New System.Drawing.Point(2, 327)
-        Me.Action_btn.Margin = New System.Windows.Forms.Padding(2)
-        Me.Action_btn.Name = "Action_btn"
-        Me.Action_btn.Size = New System.Drawing.Size(284, 52)
-        Me.Action_btn.TabIndex = 38
-        Me.Action_btn.Text = "REGISTER"
-        Me.Action_btn.UseVisualStyleBackColor = False
         '
         'Rooms
         '

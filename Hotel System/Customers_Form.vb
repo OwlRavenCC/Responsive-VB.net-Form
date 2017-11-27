@@ -35,7 +35,7 @@
     End Sub
 
     Private Sub Action_btn_Click(sender As Object, e As EventArgs) Handles Action_btn.Click
-        Dim email As New RegexFunctions()
+        Dim email As New RegexFunctionsFields
 
 
 
@@ -103,5 +103,9 @@
                 e.Handled = True
             End If
         End If
+    End Sub
+
+    Private Sub Phone_txt_add_TextChanged(sender As Object, e As EventArgs) Handles Phone_txt_add.TextChanged
+
     End Sub
 End Class
