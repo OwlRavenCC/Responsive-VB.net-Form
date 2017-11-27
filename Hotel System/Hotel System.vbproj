@@ -96,6 +96,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="RegexFunctionsFields.vb" />
     <Compile Include="Rooms_form.Designer.vb">
       <DependentUpon>Rooms_form.vb</DependentUpon>
     </Compile>

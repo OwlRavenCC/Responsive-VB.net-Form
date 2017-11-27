@@ -31,6 +31,12 @@ Partial Class Rooms
         Me.Name_label = New System.Windows.Forms.Label()
         Me.TableLayoutPanel6 = New System.Windows.Forms.TableLayoutPanel()
         Me.Action_btn = New System.Windows.Forms.Button()
+        Me.Total_txt = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Price_txt = New System.Windows.Forms.TextBox()
+        Me.Occupants_txt = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.Room_Txt_add = New System.Windows.Forms.TextBox()
         Me.Cat_txt_add = New System.Windows.Forms.TextBox()
         Me.User_id_combo = New System.Windows.Forms.ComboBox()
@@ -97,7 +103,7 @@ Partial Class Rooms
         Me.Label1.Location = New System.Drawing.Point(174, 0)
         Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(112, 103)
+        Me.Label1.Size = New System.Drawing.Size(112, 48)
         Me.Label1.TabIndex = 24
         Me.Label1.Text = "SELECT ROOM: "
         Me.Label1.Visible = False
@@ -108,10 +114,10 @@ Partial Class Rooms
         Me.Last_label.Dock = System.Windows.Forms.DockStyle.Left
         Me.Last_label.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Last_label.ForeColor = System.Drawing.SystemColors.Control
-        Me.Last_label.Location = New System.Drawing.Point(290, 103)
+        Me.Last_label.Location = New System.Drawing.Point(290, 48)
         Me.Last_label.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Last_label.Name = "Last_label"
-        Me.Last_label.Size = New System.Drawing.Size(67, 23)
+        Me.Last_label.Size = New System.Drawing.Size(67, 21)
         Me.Last_label.TabIndex = 11
         Me.Last_label.Text = "Category"
         '
@@ -121,10 +127,10 @@ Partial Class Rooms
         Me.Name_label.Dock = System.Windows.Forms.DockStyle.Left
         Me.Name_label.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Name_label.ForeColor = System.Drawing.SystemColors.Control
-        Me.Name_label.Location = New System.Drawing.Point(2, 103)
+        Me.Name_label.Location = New System.Drawing.Point(2, 48)
         Me.Name_label.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Name_label.Name = "Name_label"
-        Me.Name_label.Size = New System.Drawing.Size(101, 23)
+        Me.Name_label.Size = New System.Drawing.Size(101, 21)
         Me.Name_label.TabIndex = 0
         Me.Name_label.Text = "Room Number"
         '
@@ -133,7 +139,13 @@ Partial Class Rooms
         Me.TableLayoutPanel6.ColumnCount = 2
         Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
         Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
-        Me.TableLayoutPanel6.Controls.Add(Me.Action_btn, 0, 3)
+        Me.TableLayoutPanel6.Controls.Add(Me.Action_btn, 0, 9)
+        Me.TableLayoutPanel6.Controls.Add(Me.Total_txt, 0, 7)
+        Me.TableLayoutPanel6.Controls.Add(Me.Label4, 0, 6)
+        Me.TableLayoutPanel6.Controls.Add(Me.Price_txt, 1, 5)
+        Me.TableLayoutPanel6.Controls.Add(Me.Occupants_txt, 0, 5)
+        Me.TableLayoutPanel6.Controls.Add(Me.Label3, 1, 4)
+        Me.TableLayoutPanel6.Controls.Add(Me.Label2, 0, 4)
         Me.TableLayoutPanel6.Controls.Add(Me.Label1, 0, 0)
         Me.TableLayoutPanel6.Controls.Add(Me.Last_label, 1, 1)
         Me.TableLayoutPanel6.Controls.Add(Me.Name_label, 0, 1)
@@ -144,12 +156,17 @@ Partial Class Rooms
         Me.TableLayoutPanel6.Location = New System.Drawing.Point(0, 4)
         Me.TableLayoutPanel6.Margin = New System.Windows.Forms.Padding(2)
         Me.TableLayoutPanel6.Name = "TableLayoutPanel6"
-        Me.TableLayoutPanel6.RowCount = 5
-        Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 58.05085!))
-        Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.13559!))
-        Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 28.81356!))
-        Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40.0!))
-        Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 162.0!))
+        Me.TableLayoutPanel6.RowCount = 10
+        Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 61.53846!))
+        Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 26.92308!))
+        Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.53846!))
+        Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 56.0!))
+        Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24.0!))
+        Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 52.0!))
+        Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32.0!))
+        Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 47.0!))
+        Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36.0!))
+        Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 55.0!))
         Me.TableLayoutPanel6.Size = New System.Drawing.Size(576, 381)
         Me.TableLayoutPanel6.TabIndex = 1
         '
@@ -159,19 +176,90 @@ Partial Class Rooms
         Me.Action_btn.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Action_btn.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Action_btn.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Action_btn.Location = New System.Drawing.Point(2, 179)
+        Me.Action_btn.Location = New System.Drawing.Point(2, 327)
         Me.Action_btn.Margin = New System.Windows.Forms.Padding(2)
         Me.Action_btn.Name = "Action_btn"
-        Me.Action_btn.Size = New System.Drawing.Size(284, 36)
-        Me.Action_btn.TabIndex = 26
+        Me.Action_btn.Size = New System.Drawing.Size(284, 52)
+        Me.Action_btn.TabIndex = 38
         Me.Action_btn.Text = "REGISTER"
         Me.Action_btn.UseVisualStyleBackColor = False
+        '
+        'Total_txt
+        '
+        Me.Total_txt.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Total_txt.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Total_txt.Location = New System.Drawing.Point(2, 244)
+        Me.Total_txt.Margin = New System.Windows.Forms.Padding(2)
+        Me.Total_txt.Name = "Total_txt"
+        Me.Total_txt.Size = New System.Drawing.Size(284, 27)
+        Me.Total_txt.TabIndex = 37
+        Me.Total_txt.Text = " "
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label4.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.SystemColors.Control
+        Me.Label4.Location = New System.Drawing.Point(2, 210)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(41, 32)
+        Me.Label4.TabIndex = 35
+        Me.Label4.Text = "Total"
+        '
+        'Price_txt
+        '
+        Me.Price_txt.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Price_txt.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Price_txt.Location = New System.Drawing.Point(290, 160)
+        Me.Price_txt.Margin = New System.Windows.Forms.Padding(2)
+        Me.Price_txt.Name = "Price_txt"
+        Me.Price_txt.Size = New System.Drawing.Size(284, 27)
+        Me.Price_txt.TabIndex = 33
+        '
+        'Occupants_txt
+        '
+        Me.Occupants_txt.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Occupants_txt.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Occupants_txt.Location = New System.Drawing.Point(2, 160)
+        Me.Occupants_txt.Margin = New System.Windows.Forms.Padding(2)
+        Me.Occupants_txt.Name = "Occupants_txt"
+        Me.Occupants_txt.Size = New System.Drawing.Size(284, 27)
+        Me.Occupants_txt.TabIndex = 32
+        Me.Occupants_txt.Text = " "
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label3.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.SystemColors.Control
+        Me.Label3.Location = New System.Drawing.Point(290, 134)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(114, 24)
+        Me.Label3.TabIndex = 31
+        Me.Label3.Text = "Price per person"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label2.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.SystemColors.Control
+        Me.Label2.Location = New System.Drawing.Point(2, 134)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(78, 24)
+        Me.Label2.TabIndex = 30
+        Me.Label2.Text = "Occupants"
         '
         'Room_Txt_add
         '
         Me.Room_Txt_add.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Room_Txt_add.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Room_Txt_add.Location = New System.Drawing.Point(2, 128)
+        Me.Room_Txt_add.Location = New System.Drawing.Point(2, 71)
         Me.Room_Txt_add.Margin = New System.Windows.Forms.Padding(2)
         Me.Room_Txt_add.Name = "Room_Txt_add"
         Me.Room_Txt_add.Size = New System.Drawing.Size(284, 27)
@@ -182,7 +270,7 @@ Partial Class Rooms
         '
         Me.Cat_txt_add.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Cat_txt_add.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Cat_txt_add.Location = New System.Drawing.Point(290, 128)
+        Me.Cat_txt_add.Location = New System.Drawing.Point(290, 71)
         Me.Cat_txt_add.Margin = New System.Windows.Forms.Padding(2)
         Me.Cat_txt_add.Name = "Cat_txt_add"
         Me.Cat_txt_add.Size = New System.Drawing.Size(284, 27)
@@ -425,5 +513,11 @@ Partial Class Rooms
     Friend WithEvents Delete_btn As Button
     Friend WithEvents Update_btn As Button
     Friend WithEvents User_id_combo As ComboBox
+    Friend WithEvents Total_txt As TextBox
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Price_txt As TextBox
+    Friend WithEvents Occupants_txt As TextBox
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label2 As Label
     Friend WithEvents Action_btn As Button
 End Class

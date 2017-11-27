@@ -35,17 +35,28 @@
     End Sub
 
     Private Sub Action_btn_Click(sender As Object, e As EventArgs) Handles Action_btn.Click
+        Dim email As New RegexFunctionsFields
+
+
 
         If (Action_btn.Text = "REGISTER") Then
-            Call AddCustomer(Name_Txt_add.Text, Last_txt_add.Text, Gender_combo_add.SelectedValue, dob_datepicker.Value, Address_txt.Text, City_txt_add.Text, State_txt_add.Text, Zip_txt_add.Text, Phone_txt_add.Text, eMail_txt_add.Text)
+            If Check_textbox(TableLayoutPanel6) And email.IsValidEmail(eMail_txt_add.Text) Then
+                Call AddCustomer(Name_Txt_add.Text, Last_txt_add.Text, Gender_combo_add.SelectedValue, dob_datepicker.Value, Address_txt.Text, City_txt_add.Text, State_txt_add.Text, Zip_txt_add.Text, Phone_txt_add.Text, eMail_txt_add.Text)
+                Call Clear_textbox(TableLayoutPanel6)
+            Else
+                MsgBox("Please complete all fields required and correctly")
+            End If
         ElseIf (Action_btn.Text = "UPDATE") Then
             Call UpdateCustomer(User_id_combo.SelectedValue.ToString, Name_Txt_add.Text, Last_txt_add.Text, Gender_combo_add.SelectedValue, dob_datepicker.Value, Address_txt.Text, City_txt_add.Text, State_txt_add.Text, Zip_txt_add.Text, Phone_txt_add.Text, eMail_txt_add.Text)
-
+            Call Clear_textbox(TableLayoutPanel6)
+            Call Fill_combo(User_id_combo)
         ElseIf (Action_btn.Text = "DELETE") Then
             Call DeleteCustomer(User_id_combo.SelectedValue.ToString)
+            Call Clear_textbox(TableLayoutPanel6)
+            Call Fill_combo(User_id_combo)
         End If
-        Call Fill_combo(User_id_combo)
-        Call Clear_textbox(TableLayoutPanel6)
+
+
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -59,6 +70,8 @@
         Gender_combo_add.DataSource = New BindingSource(comboSource, Nothing)
         Gender_combo_add.DisplayMember = "Value"
         Gender_combo_add.ValueMember = "Key"
+
+
 
     End Sub
 
@@ -82,5 +95,17 @@
     Private Sub RoomsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RoomsToolStripMenuItem.Click
         Me.Hide()
         Rooms.Show()
+    End Sub
+
+    Private Sub Phone_txt_add_KeyPress(sender As Object, e As KeyPressEventArgs) Handles Phone_txt_add.KeyPress
+        If Asc(e.KeyChar) <> 8 Then
+            If Asc(e.KeyChar) < 48 Or Asc(e.KeyChar) > 57 Then
+                e.Handled = True
+            End If
+        End If
+    End Sub
+
+    Private Sub Phone_txt_add_TextChanged(sender As Object, e As EventArgs) Handles Phone_txt_add.TextChanged
+
     End Sub
 End Class

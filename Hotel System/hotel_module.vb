@@ -190,21 +190,25 @@ Module Hotel_module
     End Sub
     'ROOMS SUBS
     'Creates new room
-    Public Sub CreateRoom(number As String, category As String)
+    Public Sub CreateRoom(number As String, category As String, occupants As Integer, price As Double)
         Try
             cm = New OleDb.OleDbCommand
             With cm
                 .Connection = cn
                 .CommandType = CommandType.Text
-                .CommandText = "INSERT INTO rooms (num,cat) VALUES (@number,@category)"
+                .CommandText = "INSERT INTO rooms (num,cat,occupants,price) VALUES (@number,@category,@occupants,@price)"
 
                 'Validate and assign value to parameters
                 .Parameters.Add(New System.Data.OleDb.OleDbParameter("@number", System.Data.OleDb.OleDbType.VarChar, 255, number))
                 .Parameters.Add(New System.Data.OleDb.OleDbParameter("@category", System.Data.OleDb.OleDbType.VarChar, 255, category))
+                .Parameters.Add(New System.Data.OleDb.OleDbParameter("@occupants", System.Data.OleDb.OleDbType.VarChar, 255, occupants))
+                .Parameters.Add(New System.Data.OleDb.OleDbParameter("@price", System.Data.OleDb.OleDbType.Currency, 255, price))
 
                 'Run query parameters
                 cm.Parameters("@number").Value = number
                 cm.Parameters("@category").Value = category
+                cm.Parameters("@occupants").Value = occupants
+                cm.Parameters("@price").Value = price
 
                 cm.ExecuteNonQuery()
                 MsgBox("Room was created sucessfully.", MsgBoxStyle.Information)
@@ -246,7 +250,7 @@ Module Hotel_module
         End Try
     End Sub
 
-    Public Sub Fill_textbox_Room(id_room As String, number As TextBox, category As TextBox)
+    Public Sub Fill_textbox_Room(id_room As String, number As TextBox, category As TextBox, occupants As TextBox, price As TextBox)
         Try
             cm = New OleDb.OleDbCommand
             With cm
@@ -258,6 +262,8 @@ Module Hotel_module
             While dr.Read()
                 number.Text = dr("num").ToString
                 category.Text = dr("cat").ToString
+                occupants.Text = dr("occupants").ToString
+                price.Text = dr("price").ToString
 
 
             End While
@@ -271,23 +277,27 @@ Module Hotel_module
     End Sub
 
     'Updates existing room
-    Public Sub UpdateRoom(id_room As String, num As String, cat As String)
+    Public Sub UpdateRoom(id_room As String, num As String, cat As String, occupants As String, price As String)
         Try
             cm = New OleDb.OleDbCommand
             With cm
                 .Connection = cn
                 .CommandType = CommandType.Text
-                .CommandText = "UPDATE rooms SET num = @num ,cat = @cat WHERE id_room =" & id_room
+                .CommandText = "UPDATE rooms SET num = @num ,cat = @cat, occupants = @occupants, price = @price WHERE id_room =" & id_room
 
 
                 'Validate and assign value to parameters
                 .Parameters.Add(New System.Data.OleDb.OleDbParameter("@num", System.Data.OleDb.OleDbType.VarChar, 255, num))
                 .Parameters.Add(New System.Data.OleDb.OleDbParameter("@cat", System.Data.OleDb.OleDbType.VarChar, 255, cat))
+                .Parameters.Add(New System.Data.OleDb.OleDbParameter("@occupants", System.Data.OleDb.OleDbType.VarChar, 255, occupants))
+                .Parameters.Add(New System.Data.OleDb.OleDbParameter("@price", System.Data.OleDb.OleDbType.VarChar, 255, price))
 
 
                 'Run query parameters
                 cm.Parameters("@num").Value = num
                 cm.Parameters("@cat").Value = cat
+                cm.Parameters("@occupants").Value = occupants
+                cm.Parameters("@price").Value = price
 
 
                 cm.ExecuteNonQuery()
@@ -337,4 +347,24 @@ Module Hotel_module
         Next
 
     End Sub
+
+    Public Function Check_textbox(form_panel As TableLayoutPanel) As Boolean
+
+
+        Dim Checker As Boolean
+
+        Checker = True
+
+        For Each tb As TextBox In form_panel.Controls.OfType(Of TextBox)()
+            Trim(tb.Text)
+            If tb.Text = "" Then
+                Checker = False
+            End If
+        Next
+
+        Return Checker
+
+
+
+    End Function
 End Module
