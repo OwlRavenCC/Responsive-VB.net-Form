@@ -67,7 +67,7 @@ Partial Class Rooms
         Me.FlowLayoutPanel1.BackColor = System.Drawing.Color.Transparent
         Me.FlowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.FlowLayoutPanel1.Location = New System.Drawing.Point(2, 2)
-        Me.FlowLayoutPanel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.FlowLayoutPanel1.Margin = New System.Windows.Forms.Padding(2)
         Me.FlowLayoutPanel1.Name = "FlowLayoutPanel1"
         Me.FlowLayoutPanel1.Size = New System.Drawing.Size(982, 55)
         Me.FlowLayoutPanel1.TabIndex = 1
@@ -77,7 +77,7 @@ Partial Class Rooms
         Me.FlowLayoutPanel2.BackColor = System.Drawing.Color.Transparent
         Me.FlowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.FlowLayoutPanel2.Location = New System.Drawing.Point(2, 537)
-        Me.FlowLayoutPanel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.FlowLayoutPanel2.Margin = New System.Windows.Forms.Padding(2)
         Me.FlowLayoutPanel2.Name = "FlowLayoutPanel2"
         Me.FlowLayoutPanel2.Size = New System.Drawing.Size(982, 57)
         Me.FlowLayoutPanel2.TabIndex = 2
@@ -142,7 +142,7 @@ Partial Class Rooms
         Me.TableLayoutPanel6.Controls.Add(Me.User_id_combo, 1, 0)
         Me.TableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel6.Location = New System.Drawing.Point(0, 4)
-        Me.TableLayoutPanel6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TableLayoutPanel6.Margin = New System.Windows.Forms.Padding(2)
         Me.TableLayoutPanel6.Name = "TableLayoutPanel6"
         Me.TableLayoutPanel6.RowCount = 5
         Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 58.05085!))
@@ -160,7 +160,7 @@ Partial Class Rooms
         Me.Action_btn.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Action_btn.ForeColor = System.Drawing.SystemColors.ButtonFace
         Me.Action_btn.Location = New System.Drawing.Point(2, 179)
-        Me.Action_btn.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Action_btn.Margin = New System.Windows.Forms.Padding(2)
         Me.Action_btn.Name = "Action_btn"
         Me.Action_btn.Size = New System.Drawing.Size(284, 36)
         Me.Action_btn.TabIndex = 26
@@ -172,7 +172,7 @@ Partial Class Rooms
         Me.Room_Txt_add.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Room_Txt_add.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Room_Txt_add.Location = New System.Drawing.Point(2, 128)
-        Me.Room_Txt_add.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Room_Txt_add.Margin = New System.Windows.Forms.Padding(2)
         Me.Room_Txt_add.Name = "Room_Txt_add"
         Me.Room_Txt_add.Size = New System.Drawing.Size(284, 27)
         Me.Room_Txt_add.TabIndex = 0
@@ -183,7 +183,7 @@ Partial Class Rooms
         Me.Cat_txt_add.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Cat_txt_add.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Cat_txt_add.Location = New System.Drawing.Point(290, 128)
-        Me.Cat_txt_add.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Cat_txt_add.Margin = New System.Windows.Forms.Padding(2)
         Me.Cat_txt_add.Name = "Cat_txt_add"
         Me.Cat_txt_add.Size = New System.Drawing.Size(284, 27)
         Me.Cat_txt_add.TabIndex = 6
@@ -193,7 +193,7 @@ Partial Class Rooms
         Me.User_id_combo.Dock = System.Windows.Forms.DockStyle.Fill
         Me.User_id_combo.FormattingEnabled = True
         Me.User_id_combo.Location = New System.Drawing.Point(290, 2)
-        Me.User_id_combo.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.User_id_combo.Margin = New System.Windows.Forms.Padding(2)
         Me.User_id_combo.Name = "User_id_combo"
         Me.User_id_combo.Size = New System.Drawing.Size(284, 21)
         Me.User_id_combo.TabIndex = 25
@@ -237,7 +237,7 @@ Partial Class Rooms
         Me.Panel_form.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel_form.ForeColor = System.Drawing.SystemColors.ActiveCaption
         Me.Panel_form.Location = New System.Drawing.Point(74, 2)
-        Me.Panel_form.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel_form.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel_form.Name = "Panel_form"
         Me.Panel_form.Padding = New System.Windows.Forms.Padding(0, 4, 0, 4)
         Me.Panel_form.Size = New System.Drawing.Size(576, 389)
@@ -252,11 +252,11 @@ Partial Class Rooms
         Me.TableLayoutPanel5.Controls.Add(Me.Panel_form, 1, 0)
         Me.TableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel5.Location = New System.Drawing.Point(2, 48)
-        Me.TableLayoutPanel5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TableLayoutPanel5.Margin = New System.Windows.Forms.Padding(2)
         Me.TableLayoutPanel5.Name = "TableLayoutPanel5"
         Me.TableLayoutPanel5.RowCount = 1
         Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 391.0!))
+        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 393.0!))
         Me.TableLayoutPanel5.Size = New System.Drawing.Size(725, 393)
         Me.TableLayoutPanel5.TabIndex = 0
         '
@@ -268,7 +268,7 @@ Partial Class Rooms
         Me.TableLayoutPanel4.Controls.Add(Me.Title_label, 0, 0)
         Me.TableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel4.Location = New System.Drawing.Point(251, 2)
-        Me.TableLayoutPanel4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TableLayoutPanel4.Margin = New System.Windows.Forms.Padding(2)
         Me.TableLayoutPanel4.Name = "TableLayoutPanel4"
         Me.TableLayoutPanel4.RowCount = 3
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.0!))
@@ -284,7 +284,7 @@ Partial Class Rooms
         Me.Add_btn.Font = New System.Drawing.Font("Verdana", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Add_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Add_btn.Location = New System.Drawing.Point(2, 2)
-        Me.Add_btn.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Add_btn.Margin = New System.Windows.Forms.Padding(2)
         Me.Add_btn.Name = "Add_btn"
         Me.Add_btn.Size = New System.Drawing.Size(241, 152)
         Me.Add_btn.TabIndex = 3
@@ -301,7 +301,7 @@ Partial Class Rooms
         Me.TableLayoutPanel1.Controls.Add(Me.FlowLayoutPanel2, 0, 2)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
-        Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(2)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 3
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.0!))
@@ -320,7 +320,7 @@ Partial Class Rooms
         Me.TableLayoutPanel2.Controls.Add(Me.TableLayoutPanel4, 1, 0)
         Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel2.Location = New System.Drawing.Point(2, 61)
-        Me.TableLayoutPanel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TableLayoutPanel2.Margin = New System.Windows.Forms.Padding(2)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
         Me.TableLayoutPanel2.RowCount = 1
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
@@ -337,7 +337,7 @@ Partial Class Rooms
         Me.TableLayoutPanel3.Controls.Add(Me.Add_btn, 0, 0)
         Me.TableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel3.Location = New System.Drawing.Point(2, 2)
-        Me.TableLayoutPanel3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TableLayoutPanel3.Margin = New System.Windows.Forms.Padding(2)
         Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
         Me.TableLayoutPanel3.RowCount = 3
         Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
@@ -353,7 +353,7 @@ Partial Class Rooms
         Me.Delete_btn.Font = New System.Drawing.Font("Verdana", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Delete_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Delete_btn.Location = New System.Drawing.Point(2, 314)
-        Me.Delete_btn.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Delete_btn.Margin = New System.Windows.Forms.Padding(2)
         Me.Delete_btn.Name = "Delete_btn"
         Me.Delete_btn.Size = New System.Drawing.Size(241, 152)
         Me.Delete_btn.TabIndex = 5
@@ -367,7 +367,7 @@ Partial Class Rooms
         Me.Update_btn.Font = New System.Drawing.Font("Verdana", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Update_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Update_btn.Location = New System.Drawing.Point(2, 158)
-        Me.Update_btn.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Update_btn.Margin = New System.Windows.Forms.Padding(2)
         Me.Update_btn.Name = "Update_btn"
         Me.Update_btn.Size = New System.Drawing.Size(241, 152)
         Me.Update_btn.TabIndex = 4
@@ -382,7 +382,7 @@ Partial Class Rooms
         Me.ClientSize = New System.Drawing.Size(986, 596)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.TableLayoutPanel1)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Rooms"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Rooms"
