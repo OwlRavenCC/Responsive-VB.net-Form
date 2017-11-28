@@ -1,11 +1,14 @@
 ﻿Public Class Rooms
     Private Sub BOOKINGToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BOOKINGToolStripMenuItem.Click
+        Bookings_form.Show()
+        Me.Close()
 
     End Sub
 
     Private Sub CustomersToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CustomersToolStripMenuItem.Click
-        Me.Hide()
         Customers_form.Show()
+        Me.Close()
+
     End Sub
 
     Private Sub Action_btn_Click_1(sender As Object, e As EventArgs)

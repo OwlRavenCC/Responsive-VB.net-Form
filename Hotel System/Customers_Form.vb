@@ -89,12 +89,14 @@
     End Sub
 
     Private Sub BOOKINGToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BOOKINGToolStripMenuItem.Click
-
+        Bookings_form.Show()
+        Me.Close()
     End Sub
 
     Private Sub RoomsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RoomsToolStripMenuItem.Click
-        Me.Hide()
         Rooms.Show()
+        Me.Close()
+
     End Sub
 
     Private Sub Phone_txt_add_KeyPress(sender As Object, e As KeyPressEventArgs) Handles Phone_txt_add.KeyPress

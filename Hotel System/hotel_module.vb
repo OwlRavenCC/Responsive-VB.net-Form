@@ -333,8 +333,156 @@ Module Hotel_module
         End If
 
     End Sub
+    'BOOKING SUBS
+    'Creates new Booking
+    Public Sub CreateBooking(id_user As String, id_room As String, date_booked As String, days As String)
+        Try
+            cm = New OleDb.OleDbCommand
+            With cm
+                .Connection = cn
+                .CommandType = CommandType.Text
+                .CommandText = "INSERT INTO [bookings] ([id_user],[id_room],[date],[days]) VALUES (@id_user,@id_room,@date, @days)"
+
+                'Validate and assign value to parameters
+                .Parameters.Add(New System.Data.OleDb.OleDbParameter("@id_user", System.Data.OleDb.OleDbType.VarChar, 255, id_user))
+                .Parameters.Add(New System.Data.OleDb.OleDbParameter("@id_room", System.Data.OleDb.OleDbType.VarChar, 255, id_room))
+                .Parameters.Add(New System.Data.OleDb.OleDbParameter("@date", System.Data.OleDb.OleDbType.VarChar, 255, date_booked))
+                .Parameters.Add(New System.Data.OleDb.OleDbParameter("@days", System.Data.OleDb.OleDbType.VarChar, 255, days))
+
+                'Run query parameters
+                cm.Parameters("@id_user").Value = Val(id_user)
+                cm.Parameters("@id_room").Value = Val(id_room)
+                cm.Parameters("@date").Value = date_booked
+                cm.Parameters("@days").Value = days
+
+                cm.ExecuteNonQuery()
+                MsgBox("Booking was created sucessfully.", MsgBoxStyle.Information)
+                Exit Sub
+            End With
+        Catch ex As Exception
+            MsgBox(ex.Message, MsgBoxStyle.Critical)
+        End Try
+    End Sub
+
+    Public Sub Fill_combo_Booking(Combo_fill As ComboBox)
+        'Create variable to store combobox data array
+        Dim comboSource As New Dictionary(Of String, String)()
+        Dim container As String
+        Try
+            cm = New OleDb.OleDbCommand
+            With cm
+                .Connection = cn
+                .CommandType = CommandType.Text
+                .CommandText = "SELECT * FROM bookings"
+                dr = .ExecuteReader
+            End With
+            While dr.Read()
+
+                container = dr("id_booking").ToString
+                comboSource.Add(Val(container), dr("id_booking").ToString & "-" & dr("date").ToString)
+
+            End While
+
+            'Define combobox value and text displayed
+            Combo_fill.DataSource = New BindingSource(comboSource, Nothing)
+            Combo_fill.DisplayMember = "Value"
+            Combo_fill.ValueMember = "Key"
 
 
+
+            Exit Sub
+
+        Catch ex As Exception
+            MsgBox(ex.Message, MsgBoxStyle.Critical)
+        End Try
+    End Sub
+
+    Public Sub Fill_textbox_Booking(id_booking As String, id_user As ComboBox, id_room As ComboBox, date_booked As DateTimePicker, days As TextBox)
+        Try
+            cm = New OleDb.OleDbCommand
+            With cm
+                .Connection = cn
+                .CommandType = CommandType.Text
+                .CommandText = "SELECT * FROM [bookings] WHERE [id_booking] = " & id_booking
+                dr = .ExecuteReader
+            End With
+            While dr.Read()
+
+                id_user.SelectedValue = id_user.FindStringExact(dr("id_user").ToString)
+                id_room.SelectedValue = id_room.FindStringExact(dr("id_room").ToString)
+
+                date_booked.Value = dr("date").ToString
+                days.Text = dr("days").ToString
+
+
+            End While
+
+            Exit Sub
+
+        Catch ex As Exception
+            MsgBox(ex.Message, MsgBoxStyle.Critical)
+        End Try
+
+    End Sub
+
+    'Updates existing Booking
+    Public Sub UpdateBooking(id_booking As String, id_user As String, id_room As String, date_booked As String, days As String)
+        Try
+            cm = New OleDb.OleDbCommand
+            With cm
+                .Connection = cn
+                .CommandType = CommandType.Text
+                .CommandText = "UPDATE [bookings] SET [id_user] = @id_user ,[id_room] = @id_room, [date] = @date, [days] = @days WHERE id_booking =" & id_booking
+
+
+                'Validate and assign value to parameters
+                .Parameters.Add(New System.Data.OleDb.OleDbParameter("@id_user", System.Data.OleDb.OleDbType.VarChar, 255, id_user))
+                .Parameters.Add(New System.Data.OleDb.OleDbParameter("@id_booking", System.Data.OleDb.OleDbType.VarChar, 255, id_room))
+                .Parameters.Add(New System.Data.OleDb.OleDbParameter("@date", System.Data.OleDb.OleDbType.VarChar, 255, date_booked))
+                .Parameters.Add(New System.Data.OleDb.OleDbParameter("@days", System.Data.OleDb.OleDbType.VarChar, 255, days))
+
+
+                'Run query parameters
+                cm.Parameters("@id_user").Value = id_user
+                cm.Parameters("@id_booking").Value = id_booking
+                cm.Parameters("@date").Value = date_booked
+                cm.Parameters("@days").Value = days
+
+
+                cm.ExecuteNonQuery()
+                MsgBox("Booking Information was updated sucessfully.", MsgBoxStyle.Information)
+                Exit Sub
+            End With
+        Catch ex As Exception
+            MsgBox(ex.Message, MsgBoxStyle.Critical)
+        End Try
+    End Sub
+
+
+    'Deletes room based on id on combobox
+    Public Sub DeleteBooking(id_booking As String)
+        Dim x As Integer
+        x = MsgBox("Are you sure you want to delete this Booking?", MsgBoxStyle.YesNo, "WARNING")
+
+        If (x = vbYes) Then
+            Try
+                cm = New OleDb.OleDbCommand
+                With cm
+                    .Connection = cn
+                    .CommandType = CommandType.Text
+                    .CommandText = "DELETE FROM bookings WHERE id_booking = " & id_booking
+                    dr = .ExecuteReader
+                End With
+
+                MsgBox("Booking was deleted succesfully", MsgBoxStyle.Information)
+
+                Exit Sub
+            Catch ex As Exception
+                MsgBox(ex.Message, MsgBoxStyle.Critical)
+            End Try
+        End If
+
+    End Sub
 
 
     'ALL SUBS

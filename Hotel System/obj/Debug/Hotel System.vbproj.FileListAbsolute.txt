@@ -36,3 +36,4 @@ C:\Users\Carlos\Source\Repos\Responsive-VB.net-Form\Hotel System\obj\Debug\Hotel
 C:\Users\Carlos\Source\Repos\Responsive-VB.net-Form\Hotel System\obj\Debug\Hotel System.exe
 C:\Users\Carlos\Source\Repos\Responsive-VB.net-Form\Hotel System\obj\Debug\Hotel System.xml
 C:\Users\Carlos\Source\Repos\Responsive-VB.net-Form\Hotel System\obj\Debug\Hotel System.pdb
+C:\Users\Carlos\Source\Repos\Responsive-VB.net-Form\Hotel System\obj\Debug\Hotel_System.Bookings_form.resources
