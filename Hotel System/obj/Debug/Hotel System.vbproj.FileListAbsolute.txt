@@ -37,3 +37,17 @@ C:\Users\Carlos\Source\Repos\Responsive-VB.net-Form\Hotel System\obj\Debug\Hotel
 C:\Users\Carlos\Source\Repos\Responsive-VB.net-Form\Hotel System\obj\Debug\Hotel System.xml
 C:\Users\Carlos\Source\Repos\Responsive-VB.net-Form\Hotel System\obj\Debug\Hotel System.pdb
 C:\Users\Carlos\Source\Repos\Responsive-VB.net-Form\Hotel System\obj\Debug\Hotel_System.Bookings_form.resources
+C:\Users\LINK_\Source\Repos\Responsive-VB.net-Form\Hotel System\bin\Debug\Hotel System.exe.config
+C:\Users\LINK_\Source\Repos\Responsive-VB.net-Form\Hotel System\bin\Debug\Hotel System.exe
+C:\Users\LINK_\Source\Repos\Responsive-VB.net-Form\Hotel System\bin\Debug\Hotel System.pdb
+C:\Users\LINK_\Source\Repos\Responsive-VB.net-Form\Hotel System\bin\Debug\Hotel System.xml
+C:\Users\LINK_\Source\Repos\Responsive-VB.net-Form\Hotel System\obj\Debug\Hotel System.vbprojResolveAssemblyReference.cache
+C:\Users\LINK_\Source\Repos\Responsive-VB.net-Form\Hotel System\obj\Debug\Hotel_System.Bookings_form.resources
+C:\Users\LINK_\Source\Repos\Responsive-VB.net-Form\Hotel System\obj\Debug\Hotel_System.Customers_form.resources
+C:\Users\LINK_\Source\Repos\Responsive-VB.net-Form\Hotel System\obj\Debug\Hotel_System.Resources.resources
+C:\Users\LINK_\Source\Repos\Responsive-VB.net-Form\Hotel System\obj\Debug\Hotel_System.Rooms.resources
+C:\Users\LINK_\Source\Repos\Responsive-VB.net-Form\Hotel System\obj\Debug\Hotel System.vbproj.GenerateResource.Cache
+C:\Users\LINK_\Source\Repos\Responsive-VB.net-Form\Hotel System\obj\Debug\Hotel System.vbproj.CoreCompileInputs.cache
+C:\Users\LINK_\Source\Repos\Responsive-VB.net-Form\Hotel System\obj\Debug\Hotel System.exe
+C:\Users\LINK_\Source\Repos\Responsive-VB.net-Form\Hotel System\obj\Debug\Hotel System.xml
+C:\Users\LINK_\Source\Repos\Responsive-VB.net-Form\Hotel System\obj\Debug\Hotel System.pdb
