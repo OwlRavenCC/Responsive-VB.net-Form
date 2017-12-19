@@ -1,4 +1,5 @@
-﻿Public Class Rooms
+﻿Imports System.Text.RegularExpressions
+Public Class Rooms
     Private Sub BOOKINGToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BOOKINGToolStripMenuItem.Click
         Bookings_form.Show()
         Me.Close()
@@ -93,10 +94,14 @@
     End Sub
 
     Private Sub Occupants_txt_TextChanged(sender As Object, e As EventArgs) Handles Occupants_txt.TextChanged
+
+
         Total_txt.Text = "$" & Val(Occupants_txt.Text) * Val(Price_txt.Text)
     End Sub
 
     Private Sub Price_txt_TextChanged(sender As Object, e As EventArgs) Handles Price_txt.TextChanged
+
+
         Total_txt.Text = "$" & Val(Occupants_txt.Text) * Val(Price_txt.Text)
     End Sub
 
@@ -114,5 +119,9 @@
                 e.Handled = True
             End If
         End If
+    End Sub
+
+    Private Sub Room_Txt_add_TextChanged(sender As Object, e As EventArgs) Handles Room_Txt_add.TextChanged
+
     End Sub
 End Class

@@ -74,6 +74,9 @@ Partial Class Customers_form
         '
         'MenuStrip1
         '
+        Me.MenuStrip1.BackColor = System.Drawing.Color.RosyBrown
+        Me.MenuStrip1.BackgroundImage = Global.Hotel_System.My.Resources.Resources.warty_final_ubuntu
+        Me.MenuStrip1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CustomersToolStripMenuItem, Me.BOOKINGToolStripMenuItem, Me.RoomsToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
@@ -111,7 +114,7 @@ Partial Class Customers_form
         Me.TableLayoutPanel1.Controls.Add(Me.FlowLayoutPanel2, 0, 2)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 55)
-        Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(5)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 3
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.0!))
@@ -124,13 +127,13 @@ Partial Class Customers_form
         '
         Me.TableLayoutPanel2.BackColor = System.Drawing.Color.Transparent
         Me.TableLayoutPanel2.ColumnCount = 2
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.36688!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 74.63313!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.47843!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 86.52158!))
         Me.TableLayoutPanel2.Controls.Add(Me.TableLayoutPanel3, 0, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.TableLayoutPanel4, 1, 0)
         Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel2.Location = New System.Drawing.Point(5, 141)
-        Me.TableLayoutPanel2.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.TableLayoutPanel2.Margin = New System.Windows.Forms.Padding(5)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
         Me.TableLayoutPanel2.RowCount = 1
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
@@ -147,13 +150,13 @@ Partial Class Customers_form
         Me.TableLayoutPanel3.Controls.Add(Me.Add_btn, 0, 0)
         Me.TableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel3.Location = New System.Drawing.Point(5, 5)
-        Me.TableLayoutPanel3.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.TableLayoutPanel3.Margin = New System.Windows.Forms.Padding(5)
         Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
         Me.TableLayoutPanel3.RowCount = 3
         Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
         Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
         Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
-        Me.TableLayoutPanel3.Size = New System.Drawing.Size(654, 1072)
+        Me.TableLayoutPanel3.Size = New System.Drawing.Size(343, 1072)
         Me.TableLayoutPanel3.TabIndex = 1
         '
         'Delete_btn
@@ -163,9 +166,9 @@ Partial Class Customers_form
         Me.Delete_btn.Font = New System.Drawing.Font("Verdana", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Delete_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Delete_btn.Location = New System.Drawing.Point(5, 719)
-        Me.Delete_btn.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.Delete_btn.Margin = New System.Windows.Forms.Padding(5)
         Me.Delete_btn.Name = "Delete_btn"
-        Me.Delete_btn.Size = New System.Drawing.Size(644, 348)
+        Me.Delete_btn.Size = New System.Drawing.Size(333, 348)
         Me.Delete_btn.TabIndex = 5
         Me.Delete_btn.Text = "Delete Customer"
         Me.Delete_btn.UseVisualStyleBackColor = False
@@ -177,23 +180,23 @@ Partial Class Customers_form
         Me.Update_btn.Font = New System.Drawing.Font("Verdana", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Update_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Update_btn.Location = New System.Drawing.Point(5, 362)
-        Me.Update_btn.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.Update_btn.Margin = New System.Windows.Forms.Padding(5)
         Me.Update_btn.Name = "Update_btn"
-        Me.Update_btn.Size = New System.Drawing.Size(644, 347)
+        Me.Update_btn.Size = New System.Drawing.Size(333, 347)
         Me.Update_btn.TabIndex = 4
         Me.Update_btn.Text = "Update Info"
         Me.Update_btn.UseVisualStyleBackColor = False
         '
         'Add_btn
         '
-        Me.Add_btn.BackColor = System.Drawing.Color.LimeGreen
+        Me.Add_btn.BackColor = System.Drawing.Color.OliveDrab
         Me.Add_btn.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Add_btn.Font = New System.Drawing.Font("Verdana", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Add_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Add_btn.Location = New System.Drawing.Point(5, 5)
-        Me.Add_btn.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.Add_btn.Margin = New System.Windows.Forms.Padding(5)
         Me.Add_btn.Name = "Add_btn"
-        Me.Add_btn.Size = New System.Drawing.Size(644, 347)
+        Me.Add_btn.Size = New System.Drawing.Size(333, 347)
         Me.Add_btn.TabIndex = 3
         Me.Add_btn.Text = "New Customer"
         Me.Add_btn.UseVisualStyleBackColor = False
@@ -205,14 +208,14 @@ Partial Class Customers_form
         Me.TableLayoutPanel4.Controls.Add(Me.TableLayoutPanel5, 0, 1)
         Me.TableLayoutPanel4.Controls.Add(Me.Title_label, 0, 0)
         Me.TableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel4.Location = New System.Drawing.Point(669, 5)
-        Me.TableLayoutPanel4.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.TableLayoutPanel4.Location = New System.Drawing.Point(358, 5)
+        Me.TableLayoutPanel4.Margin = New System.Windows.Forms.Padding(5)
         Me.TableLayoutPanel4.Name = "TableLayoutPanel4"
         Me.TableLayoutPanel4.RowCount = 3
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.0!))
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85.0!))
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.0!))
-        Me.TableLayoutPanel4.Size = New System.Drawing.Size(1945, 1072)
+        Me.TableLayoutPanel4.Size = New System.Drawing.Size(2256, 1072)
         Me.TableLayoutPanel4.TabIndex = 2
         '
         'TableLayoutPanel5
@@ -224,12 +227,12 @@ Partial Class Customers_form
         Me.TableLayoutPanel5.Controls.Add(Me.Panel_form, 1, 0)
         Me.TableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel5.Location = New System.Drawing.Point(5, 112)
-        Me.TableLayoutPanel5.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.TableLayoutPanel5.Margin = New System.Windows.Forms.Padding(5)
         Me.TableLayoutPanel5.Name = "TableLayoutPanel5"
         Me.TableLayoutPanel5.RowCount = 1
         Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 899.0!))
-        Me.TableLayoutPanel5.Size = New System.Drawing.Size(1935, 901)
+        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 901.0!))
+        Me.TableLayoutPanel5.Size = New System.Drawing.Size(2246, 901)
         Me.TableLayoutPanel5.TabIndex = 0
         '
         'Panel_form
@@ -238,11 +241,11 @@ Partial Class Customers_form
         Me.Panel_form.Controls.Add(Me.TableLayoutPanel6)
         Me.Panel_form.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel_form.ForeColor = System.Drawing.SystemColors.ActiveCaption
-        Me.Panel_form.Location = New System.Drawing.Point(198, 5)
-        Me.Panel_form.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.Panel_form.Location = New System.Drawing.Point(229, 5)
+        Me.Panel_form.Margin = New System.Windows.Forms.Padding(5)
         Me.Panel_form.Name = "Panel_form"
         Me.Panel_form.Padding = New System.Windows.Forms.Padding(0, 10, 0, 10)
-        Me.Panel_form.Size = New System.Drawing.Size(1539, 891)
+        Me.Panel_form.Size = New System.Drawing.Size(1788, 891)
         Me.Panel_form.TabIndex = 0
         '
         'TableLayoutPanel6
@@ -276,7 +279,7 @@ Partial Class Customers_form
         Me.TableLayoutPanel6.Controls.Add(Me.User_id_combo, 1, 0)
         Me.TableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel6.Location = New System.Drawing.Point(0, 10)
-        Me.TableLayoutPanel6.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.TableLayoutPanel6.Margin = New System.Windows.Forms.Padding(5)
         Me.TableLayoutPanel6.Name = "TableLayoutPanel6"
         Me.TableLayoutPanel6.RowCount = 12
         Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.326425!))
@@ -291,7 +294,7 @@ Partial Class Customers_form
         Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.217617!))
         Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.10363!))
         Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 83.0!))
-        Me.TableLayoutPanel6.Size = New System.Drawing.Size(1539, 871)
+        Me.TableLayoutPanel6.Size = New System.Drawing.Size(1788, 871)
         Me.TableLayoutPanel6.TabIndex = 1
         '
         'Label1
@@ -300,7 +303,7 @@ Partial Class Customers_form
         Me.Label1.Dock = System.Windows.Forms.DockStyle.Right
         Me.Label1.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.Control
-        Me.Label1.Location = New System.Drawing.Point(255, 0)
+        Me.Label1.Location = New System.Drawing.Point(338, 0)
         Me.Label1.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(253, 73)
@@ -314,7 +317,7 @@ Partial Class Customers_form
         Me.Last_label.Dock = System.Windows.Forms.DockStyle.Left
         Me.Last_label.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Last_label.ForeColor = System.Drawing.SystemColors.Control
-        Me.Last_label.Location = New System.Drawing.Point(1031, 73)
+        Me.Last_label.Location = New System.Drawing.Point(1197, 73)
         Me.Last_label.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Last_label.Name = "Last_label"
         Me.Last_label.Size = New System.Drawing.Size(193, 42)
@@ -366,7 +369,7 @@ Partial Class Customers_form
         Me.Label5.Dock = System.Windows.Forms.DockStyle.Left
         Me.Label5.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.SystemColors.Control
-        Me.Label5.Location = New System.Drawing.Point(1031, 194)
+        Me.Label5.Location = New System.Drawing.Point(1197, 194)
         Me.Label5.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(229, 59)
@@ -378,9 +381,9 @@ Partial Class Customers_form
         Me.Name_Txt_add.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Name_Txt_add.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Name_Txt_add.Location = New System.Drawing.Point(5, 120)
-        Me.Name_Txt_add.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.Name_Txt_add.Margin = New System.Windows.Forms.Padding(5)
         Me.Name_Txt_add.Name = "Name_Txt_add"
-        Me.Name_Txt_add.Size = New System.Drawing.Size(503, 56)
+        Me.Name_Txt_add.Size = New System.Drawing.Size(586, 56)
         Me.Name_Txt_add.TabIndex = 0
         Me.Name_Txt_add.Text = " "
         '
@@ -388,10 +391,10 @@ Partial Class Customers_form
         '
         Me.Last_txt_add.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Last_txt_add.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Last_txt_add.Location = New System.Drawing.Point(1031, 120)
-        Me.Last_txt_add.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.Last_txt_add.Location = New System.Drawing.Point(1197, 120)
+        Me.Last_txt_add.Margin = New System.Windows.Forms.Padding(5)
         Me.Last_txt_add.Name = "Last_txt_add"
-        Me.Last_txt_add.Size = New System.Drawing.Size(503, 56)
+        Me.Last_txt_add.Size = New System.Drawing.Size(586, 56)
         Me.Last_txt_add.TabIndex = 6
         '
         'Gender_combo_add
@@ -403,9 +406,9 @@ Partial Class Customers_form
         Me.Gender_combo_add.FormattingEnabled = True
         Me.Gender_combo_add.Items.AddRange(New Object() {"[1,Male]", "[2, Female]", "[3, Prefered not to answer]"})
         Me.Gender_combo_add.Location = New System.Drawing.Point(5, 258)
-        Me.Gender_combo_add.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.Gender_combo_add.Margin = New System.Windows.Forms.Padding(5)
         Me.Gender_combo_add.Name = "Gender_combo_add"
-        Me.Gender_combo_add.Size = New System.Drawing.Size(503, 57)
+        Me.Gender_combo_add.Size = New System.Drawing.Size(586, 57)
         Me.Gender_combo_add.TabIndex = 7
         Me.Gender_combo_add.ValueMember = "key"
         '
@@ -415,9 +418,9 @@ Partial Class Customers_form
         Me.Address_txt.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Address_txt.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Address_txt.Location = New System.Drawing.Point(5, 414)
-        Me.Address_txt.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.Address_txt.Margin = New System.Windows.Forms.Padding(5)
         Me.Address_txt.Name = "Address_txt"
-        Me.Address_txt.Size = New System.Drawing.Size(1016, 56)
+        Me.Address_txt.Size = New System.Drawing.Size(1182, 56)
         Me.Address_txt.TabIndex = 10
         '
         'Label7
@@ -439,7 +442,7 @@ Partial Class Customers_form
         Me.Label8.Dock = System.Windows.Forms.DockStyle.Left
         Me.Label8.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.SystemColors.Control
-        Me.Label8.Location = New System.Drawing.Point(518, 506)
+        Me.Label8.Location = New System.Drawing.Point(601, 506)
         Me.Label8.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(105, 63)
@@ -452,7 +455,7 @@ Partial Class Customers_form
         Me.Label9.Dock = System.Windows.Forms.DockStyle.Left
         Me.Label9.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.SystemColors.Control
-        Me.Label9.Location = New System.Drawing.Point(1031, 506)
+        Me.Label9.Location = New System.Drawing.Point(1197, 506)
         Me.Label9.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(71, 63)
@@ -464,29 +467,29 @@ Partial Class Customers_form
         Me.City_txt_add.Dock = System.Windows.Forms.DockStyle.Fill
         Me.City_txt_add.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.City_txt_add.Location = New System.Drawing.Point(5, 574)
-        Me.City_txt_add.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.City_txt_add.Margin = New System.Windows.Forms.Padding(5)
         Me.City_txt_add.Name = "City_txt_add"
-        Me.City_txt_add.Size = New System.Drawing.Size(503, 56)
+        Me.City_txt_add.Size = New System.Drawing.Size(586, 56)
         Me.City_txt_add.TabIndex = 15
         '
         'State_txt_add
         '
         Me.State_txt_add.Dock = System.Windows.Forms.DockStyle.Fill
         Me.State_txt_add.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.State_txt_add.Location = New System.Drawing.Point(518, 574)
-        Me.State_txt_add.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.State_txt_add.Location = New System.Drawing.Point(601, 574)
+        Me.State_txt_add.Margin = New System.Windows.Forms.Padding(5)
         Me.State_txt_add.Name = "State_txt_add"
-        Me.State_txt_add.Size = New System.Drawing.Size(503, 56)
+        Me.State_txt_add.Size = New System.Drawing.Size(586, 56)
         Me.State_txt_add.TabIndex = 16
         '
         'Zip_txt_add
         '
         Me.Zip_txt_add.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Zip_txt_add.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Zip_txt_add.Location = New System.Drawing.Point(1031, 574)
-        Me.Zip_txt_add.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.Zip_txt_add.Location = New System.Drawing.Point(1197, 574)
+        Me.Zip_txt_add.Margin = New System.Windows.Forms.Padding(5)
         Me.Zip_txt_add.Name = "Zip_txt_add"
-        Me.Zip_txt_add.Size = New System.Drawing.Size(503, 56)
+        Me.Zip_txt_add.Size = New System.Drawing.Size(586, 56)
         Me.Zip_txt_add.TabIndex = 17
         '
         'Label10
@@ -508,7 +511,7 @@ Partial Class Customers_form
         Me.Label11.Dock = System.Windows.Forms.DockStyle.Left
         Me.Label11.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.SystemColors.Control
-        Me.Label11.Location = New System.Drawing.Point(1031, 654)
+        Me.Label11.Location = New System.Drawing.Point(1197, 654)
         Me.Label11.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(113, 48)
@@ -520,19 +523,19 @@ Partial Class Customers_form
         Me.Phone_txt_add.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Phone_txt_add.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Phone_txt_add.Location = New System.Drawing.Point(5, 707)
-        Me.Phone_txt_add.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.Phone_txt_add.Margin = New System.Windows.Forms.Padding(5)
         Me.Phone_txt_add.Name = "Phone_txt_add"
-        Me.Phone_txt_add.Size = New System.Drawing.Size(503, 56)
+        Me.Phone_txt_add.Size = New System.Drawing.Size(586, 56)
         Me.Phone_txt_add.TabIndex = 20
         '
         'eMail_txt_add
         '
         Me.eMail_txt_add.Dock = System.Windows.Forms.DockStyle.Fill
         Me.eMail_txt_add.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.eMail_txt_add.Location = New System.Drawing.Point(1031, 707)
-        Me.eMail_txt_add.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.eMail_txt_add.Location = New System.Drawing.Point(1197, 707)
+        Me.eMail_txt_add.Margin = New System.Windows.Forms.Padding(5)
         Me.eMail_txt_add.Name = "eMail_txt_add"
-        Me.eMail_txt_add.Size = New System.Drawing.Size(503, 56)
+        Me.eMail_txt_add.Size = New System.Drawing.Size(586, 56)
         Me.eMail_txt_add.TabIndex = 21
         '
         'dob_datepicker
@@ -540,11 +543,14 @@ Partial Class Customers_form
         Me.dob_datepicker.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dob_datepicker.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dob_datepicker.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dob_datepicker.Location = New System.Drawing.Point(1031, 258)
-        Me.dob_datepicker.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.dob_datepicker.Location = New System.Drawing.Point(1197, 258)
+        Me.dob_datepicker.Margin = New System.Windows.Forms.Padding(5)
+        Me.dob_datepicker.MaxDate = New Date(2017, 12, 19, 0, 0, 0, 0)
+        Me.dob_datepicker.MinDate = New Date(1996, 1, 1, 0, 0, 0, 0)
         Me.dob_datepicker.Name = "dob_datepicker"
-        Me.dob_datepicker.Size = New System.Drawing.Size(503, 56)
+        Me.dob_datepicker.Size = New System.Drawing.Size(586, 56)
         Me.dob_datepicker.TabIndex = 8
+        Me.dob_datepicker.Value = New Date(2017, 12, 19, 0, 0, 0, 0)
         '
         'Action_btn
         '
@@ -552,10 +558,10 @@ Partial Class Customers_form
         Me.Action_btn.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Action_btn.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Action_btn.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Action_btn.Location = New System.Drawing.Point(518, 786)
-        Me.Action_btn.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.Action_btn.Location = New System.Drawing.Point(601, 786)
+        Me.Action_btn.Margin = New System.Windows.Forms.Padding(5)
         Me.Action_btn.Name = "Action_btn"
-        Me.Action_btn.Size = New System.Drawing.Size(503, 80)
+        Me.Action_btn.Size = New System.Drawing.Size(586, 80)
         Me.Action_btn.TabIndex = 23
         Me.Action_btn.Text = "REGISTER"
         Me.Action_btn.UseVisualStyleBackColor = False
@@ -564,10 +570,10 @@ Partial Class Customers_form
         '
         Me.User_id_combo.Dock = System.Windows.Forms.DockStyle.Fill
         Me.User_id_combo.FormattingEnabled = True
-        Me.User_id_combo.Location = New System.Drawing.Point(518, 5)
-        Me.User_id_combo.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.User_id_combo.Location = New System.Drawing.Point(601, 5)
+        Me.User_id_combo.Margin = New System.Windows.Forms.Padding(5)
         Me.User_id_combo.Name = "User_id_combo"
-        Me.User_id_combo.Size = New System.Drawing.Size(503, 39)
+        Me.User_id_combo.Size = New System.Drawing.Size(586, 39)
         Me.User_id_combo.TabIndex = 25
         Me.User_id_combo.Visible = False
         '
@@ -580,7 +586,7 @@ Partial Class Customers_form
         Me.Title_label.Location = New System.Drawing.Point(5, 0)
         Me.Title_label.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Title_label.Name = "Title_label"
-        Me.Title_label.Size = New System.Drawing.Size(1935, 107)
+        Me.Title_label.Size = New System.Drawing.Size(2246, 107)
         Me.Title_label.TabIndex = 1
         Me.Title_label.Text = "REGISTRATION FORM"
         Me.Title_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -590,7 +596,7 @@ Partial Class Customers_form
         Me.FlowLayoutPanel1.BackColor = System.Drawing.Color.Transparent
         Me.FlowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.FlowLayoutPanel1.Location = New System.Drawing.Point(5, 5)
-        Me.FlowLayoutPanel1.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.FlowLayoutPanel1.Margin = New System.Windows.Forms.Padding(5)
         Me.FlowLayoutPanel1.Name = "FlowLayoutPanel1"
         Me.FlowLayoutPanel1.Size = New System.Drawing.Size(2619, 126)
         Me.FlowLayoutPanel1.TabIndex = 1
@@ -600,7 +606,7 @@ Partial Class Customers_form
         Me.FlowLayoutPanel2.BackColor = System.Drawing.Color.Transparent
         Me.FlowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.FlowLayoutPanel2.Location = New System.Drawing.Point(5, 1233)
-        Me.FlowLayoutPanel2.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.FlowLayoutPanel2.Margin = New System.Windows.Forms.Padding(5)
         Me.FlowLayoutPanel2.Name = "FlowLayoutPanel2"
         Me.FlowLayoutPanel2.Size = New System.Drawing.Size(2619, 128)
         Me.FlowLayoutPanel2.TabIndex = 2
@@ -610,12 +616,14 @@ Partial Class Customers_form
         Me.AutoScaleDimensions = New System.Drawing.SizeF(16.0!, 31.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Highlight
+        Me.BackgroundImage = Global.Hotel_System.My.Resources.Resources.warty_final_ubuntu
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(2629, 1421)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.ForeColor = System.Drawing.SystemColors.ActiveCaption
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.Margin = New System.Windows.Forms.Padding(5)
         Me.Name = "Customers_form"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Customers"
@@ -639,12 +647,14 @@ Partial Class Customers_form
     Friend WithEvents CustomersToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
     Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
-    Friend WithEvents TableLayoutPanel3 As TableLayoutPanel
     Friend WithEvents FlowLayoutPanel1 As FlowLayoutPanel
     Friend WithEvents FlowLayoutPanel2 As FlowLayoutPanel
-    Friend WithEvents Add_btn As Button
+    Friend WithEvents BOOKINGToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents RoomsToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents TableLayoutPanel3 As TableLayoutPanel
     Friend WithEvents Delete_btn As Button
     Friend WithEvents Update_btn As Button
+    Friend WithEvents Add_btn As Button
     Friend WithEvents TableLayoutPanel4 As TableLayoutPanel
     Friend WithEvents TableLayoutPanel5 As TableLayoutPanel
     Friend WithEvents Panel_form As Panel
@@ -673,6 +683,4 @@ Partial Class Customers_form
     Friend WithEvents Action_btn As Button
     Friend WithEvents User_id_combo As ComboBox
     Friend WithEvents Title_label As Label
-    Friend WithEvents BOOKINGToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents RoomsToolStripMenuItem As ToolStripMenuItem
 End Class
